@@ -1,0 +1,24 @@
+{
+  "name": "词跃 WordSpark",
+  "short_name": "词跃",
+  "description": "儿童英语单词、词组和句式学习",
+  "start_url": "./?source=homescreen",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#071a2e",
+  "theme_color": "#08d9c4",
+  "icons": [
+    {
+      "src": "./icon-192.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
