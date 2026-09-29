@@ -5,8 +5,8 @@
   "start_url": "./?source=homescreen",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#071a2e",
-  "theme_color": "#08d9c4",
+  "background_color": "#eefaff",
+  "theme_color": "#9eddf4",
   "icons": [
     {
       "src": "./icon-192.jpg",
