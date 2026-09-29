@@ -32,6 +32,10 @@ const required=[
   ,['持久登录状态',/localStorage\.getItem\('ws-auth'\)/]
   ,['云端令牌自动续期',/grant_type=refresh_token/]
   ,['主动退出清除登录',/ws-cloud-refresh.*removeItem|removeItem\(x\)/]
+  ,['佩奇主题登录页',/佩奇陪你学英语/]
+  ,['浅粉品牌色',/#ffdce9|#ffe3ef/]
+  ,['浅蓝品牌色',/#eefaff|#ccefff/]
+  ,['登录页佩奇形象',/class="login-mascot"/]
 ];
 
 for(const [name,pattern] of required)assert.match(html,pattern,`${name} 未实现`);
