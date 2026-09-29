@@ -36,6 +36,10 @@ const required=[
   ,['浅粉品牌色',/#ffdce9|#ffe3ef/]
   ,['浅蓝品牌色',/#eefaff|#ccefff/]
   ,['登录页佩奇形象',/class="login-mascot"/]
+  ,['弹窗锁定页面',/function lockPage\(\)/]
+  ,['弹窗关闭恢复位置',/window\.scrollTo\(0,pageScrollY\)/]
+  ,['弹窗自身滚动',/overscroll-behavior:contain/]
+  ,['移动端惯性滚动',/-webkit-overflow-scrolling:touch/]
 ];
 
 for(const [name,pattern] of required)assert.match(html,pattern,`${name} 未实现`);
