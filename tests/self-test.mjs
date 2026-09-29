@@ -28,6 +28,10 @@ const required=[
   ,['手机下一题固定首屏',/\.next\.show\{position:fixed/]
   ,['App安装入口',/beforeinstallprompt/]
   ,['独立App模式',/display-mode: standalone/]
+  ,['一年登录Cookie',/Max-Age=31536000/]
+  ,['持久登录状态',/localStorage\.getItem\('ws-auth'\)/]
+  ,['云端令牌自动续期',/grant_type=refresh_token/]
+  ,['主动退出清除登录',/ws-cloud-refresh.*removeItem|removeItem\(x\)/]
 ];
 
 for(const [name,pattern] of required)assert.match(html,pattern,`${name} 未实现`);
